@@ -4,7 +4,8 @@ import Card from './Card'
 const ErrorModel = () => {
   return (
     <div className='Errormodal'>
-    <Card className="w-[36rem] p-0">
+      <div className='backdrop-blur-sm bg-white/30 fixed w-screen h-screen top-0'></div>
+    <Card className="w-[36rem] p-0 z-20">
         <header 'bg-red-700 p-4 text-white rounded-t-xl' >
             <h2 className="text-center text-xl">İsim Alanı Zorunludur</h2>
         </header>
