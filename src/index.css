@@ -9,6 +9,6 @@ html{
 body{
     @apply bg-black w-1/3 mx-auto;
 }
-.errormodal{
+.Errormodal{
     @apply fixed mx-auto flex justify-center top-1/4 left-0 w-screen z-50;
 }
