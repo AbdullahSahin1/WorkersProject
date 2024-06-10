@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
+import ErrorModel from "../UI/ErrorModel";
 const AddWorker = () => {
     const [enteredWorkerName,SetEnteredWorkerName] =useState("");
     const [enteredWage,SetEnteredWage] =useState("");
@@ -29,6 +30,7 @@ const AddWorker = () => {
 
     }
   return (
+       <ErrorModel></ErrorModel>
     <div>
         <Card className="mt-10">
         <form className="flex flex-col gap-y-2" onSubmit={addWorkerHandler}>
