@@ -41,7 +41,7 @@ const AddWorker = () => {
     }
   return (
        {error && <ErrorModel onConfrim={errorHandler} error={error}></ErrorModel>}
-    <div>
+    <React.Fragment>
         <Card className="mt-10">
         <form className="flex flex-col gap-y-2" onSubmit={addWorkerHandler}>
         <label className="font-medium" htmlFor="name">
@@ -71,7 +71,7 @@ const AddWorker = () => {
         </Card>
         
         
-    </div>
+    </React.Fragment>
   );
 };
 
