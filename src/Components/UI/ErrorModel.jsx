@@ -13,7 +13,7 @@ const ErrorModel = () => {
             <span>Lütfen Bir İsim Giriniz</span>
         </section  className='p-4'>
         <footer  className='p-4 justify-end'>
-            <Button>Tamam</Button>
+            <Button className="w-32">Tamam</Button>
         </footer>
     </Card>
     </div>
