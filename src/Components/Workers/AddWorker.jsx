@@ -8,12 +8,19 @@ const AddWorker = () => {
     const MiniWage = 5000
  const addWorkerHandler= (e) =>{
         e.preventDefault();
-        if(enteredWorkerName.trim().length ===0 ||
-        enteredWage.trim().length===0 ) 
-         {
+     if(enteredWorkerName.trim().length ===0 ) 
+         { 
+            setError({
+                title: 'İsim Alanı Zorunludur',
+                message: 'Lütfen Bir İsim Giriniz',
+            })
             return;
         }
         if (+enteredWage<MiniWage) {
+            setError({
+              title: 'Maaş alanı zorunludur',
+              message: `Lütfen ${MiniWage} değerinden büyük bir maaş değeri giriniz `
+            })
             return
             
         }
@@ -27,10 +34,13 @@ const AddWorker = () => {
           },
           ...prevState
         console.log(enteredWorkerName,enteredWage);
+     const errorHandler = () => {
+      setError(null)
+    }
 
     }
   return (
-       <ErrorModel></ErrorModel>
+       {error && <ErrorModel onConfrim={errorHandler} error={error}></ErrorModel>}
     <div>
         <Card className="mt-10">
         <form className="flex flex-col gap-y-2" onSubmit={addWorkerHandler}>
