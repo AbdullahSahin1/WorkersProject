@@ -6,7 +6,7 @@ const ErrorModel = () => {
     <div className='Errormodal'>
     <Card className="w-[36rem] p-0">
         <header 'bg-red-700 p-4 text-white rounded-t-xl' >
-            <h2>İsim Alanı Zorunludur</h2>
+            <h2 className="text-center text-xl">İsim Alanı Zorunludur</h2>
         </header>
         <section>
             <span>Lütfen Bir İsim Giriniz</span>
