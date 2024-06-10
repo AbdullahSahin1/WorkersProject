@@ -18,6 +18,13 @@ const AddWorker = () => {
         }
         SetEnteredWorkerName("");
         SetEnteredWage("");
+       props.SetWorkers((prevState)=>[
+          {
+            id: Math.floor(Math.random() * 1000),
+            name: enteredWorkerName,
+            wage: enteredWage,
+          },
+          ...prevState
         console.log(enteredWorkerName,enteredWage);
 
     }
