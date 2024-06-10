@@ -10,8 +10,8 @@ const ErrorModel = () => {
         </header>
         <section>
             <span>Lütfen Bir İsim Giriniz</span>
-        </section>
-        <footer>
+        </section  className='p-4'>
+        <footer  className='p-4 justify-end'>
             <Button>Tamam</Button>
         </footer>
     </Card>
